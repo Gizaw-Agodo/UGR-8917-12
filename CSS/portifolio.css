@@ -1,0 +1,224 @@
+
+        
+.document{
+    box-sizing: border-box;
+    margin: 0px;
+    }
+
+*   { 
+    box-sizing: border-box;
+    }
+
+.body{
+    background-color:black;   
+    }
+
+
+
+.page--header{
+    display: flex;
+    border-bottom: 1px solid rgb(83, 79, 76);
+    background-color: black;
+    color: white;
+    }
+
+.page--header__image {
+    width: 8em;
+    border-radius: 4em;
+    }
+
+.page--header__nav {
+    display:flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    }
+
+.page--header__link {
+    text-align: center;
+    padding: 0em 1em;
+    font: 1.2em bold ;
+    line-height: 2em;
+    box-shadow: 4px 2px lightgreen;
+    border-radius: 1em;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    text-decoration: none;
+    color:white;
+    }
+.page--header__link:hover{
+    background-color:lime;
+    color: black;
+    }
+.page--content {
+    background-color:  greenyellow;
+    max-width: 1500px;
+    font: 1.2em bold;
+    overflow: auto;
+    padding-bottom: 7em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+.page--content__heading{
+    padding: 2em 1em 0em 4em ;
+    }
+
+.page--content__profile{
+    border: 2px solid greenyellow;
+    display: flex;
+    margin: 2em 15em 3em 3em;
+    }
+         
+.page--profile__block{
+   
+    border-radius: 2em;
+    width: 40%;
+    background-color:rgb(13, 226, 59);
+    color: blue;
+    text-align: center;
+    padding-top: 2em;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 4em 4em 4em 2em;
+    }
+
+.page--profile__image{
+    background-color: green;
+    padding: 5px;
+    margin-top: 1em;
+    width: 20em;
+    height: 20em;
+       
+    }
+
+.page--content__text{
+    width: 70%;
+    background-color: lightgreen;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 2em 1em 2em 2em;
+    }
+
+.page--content__heading {margin: 1em 0 0 3em;}
+
+ .page--content__table{
+    width: 70%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    background-color: sandybrown;
+    font: 1em bold ;
+    margin-left: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+.table__heading {
+    border: 1px solid grey ;
+    padding: .5em;
+    background-color: lightgreen;
+    text-align: left;
+    }
+.table--data{
+    border: 1px solid grey ;
+    padding: 1em;
+    text-align: left;
+    }
+
+.table__row:hover{
+    background-color:lightskyblue;
+    }
+
+
+/*  footer css */
+.page--footer{
+    display:flex;
+    background-color: black; 
+    border-top: 1px solid gray;
+    }
+
+.page--footer__block {
+
+    display: inline;
+    padding: 0 2em 0 2em; 
+    margin: 10px;
+    border-radius: 1em;
+    width: 40%;
+    border: 1px solid grey;
+    color: white;
+    }
+
+.page--footer__contact {
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-bottom: 1em;
+    }
+
+.page--footer__image{
+    border-radius: 50%;
+    color: white;
+    font-size: 2em;
+    width: 1.5em;
+    }
+
+.block--link{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: .8em; 
+    color: white;
+    }
+.block--link:hover {
+    color: blue;
+    }
+
+@media screen and (max-width:768px) {
+    
+    .page--content__profile{
+        margin-left: 0;
+        border: none;}
+
+    .page--profile__block{
+        display: none;}
+    .page--content__heading{
+        margin: 0;}
+
+    .page--header__link{
+        margin-left: 0;
+        font-size: .8em;}
+
+    .page--header{
+        flex-direction: column;}
+    .page--footer__block{
+        width: 80%;}
+    }
+
+@media screen and (max-width : 475px){
+
+    .page--profile__image { 
+        border-radius: 1em;
+        margin: 0;
+        width: 10em;
+        height: 10em;
+        }
+    .page--content__text{
+        width: 80%;
+        font-size: .8em;}
+
+    .page--content__table{
+        font-size: .8em;
+        margin: auto;}
+        
+    .page--content__heading{
+        font-size: 1em;}
+    .page--header__image{
+        width:2em ;}
+
+    .page--header__link{
+        font-size: .6em;}
+    .page--footer{
+        font-size: .7em;
+        flex-direction: column;}
+    .page--footer__block{
+        margin: auto;
+        margin-top: 5px;
+    }
+    }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="document" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <title>contact me page</title>
+
+</head>
+<body class="body">
+   
+    <header class="page--header">
+        <img class="page--header__image" src="../images/mylogo.png" alt="my logo">
+        <nav>
+            <ul class="page--header__nav">
+            <li><a class="page--header__link" href="../index.html">home</a></li>
+            <li><a class="page--header__link" href="about.html" > about me</a></li>
+            <li><a class="page--header__link"  href="portifolio.html">my portifolio </a></li>
+            <li><a class="page--header__link"  href="skill.html"> my skills</a></li>
+            <li><a class="page--header__link"  href="certificate.html">certificates</a></li>
+            <li><a class="page--header__link"  href="contact.html">contact me</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <main class="page--content">
+        <h1 class="page--content__heading">contact me </h1>
+       
+        <div class="page--content__block">
+            <section class="page--content__section">
+                <h2 class="section__heading2">send me a message</h2>
+                <form class="section__form">
+                    <label> name: <input class="section__lable" type="text" placeholder="enter your name" required></label><br><br>
+                    <label> your message<br><textarea class="section__textarea" name="message" required > enter your message </textarea></label><br>
+                    <button id="mybutton" type="button" class="section__button " onclick="thankyou">submit</button>
+                    <p id="display">you have successfully<br>send your message <br> i will give response soon<br> thank you!</p>
+                </form>
+            </section>
+
+            <aside class="content__aside">
+                <h2>contact me at</h2>
+                 
+                 <div class="aside__address">
+                    <span > my address<img class="aside__image" src="../images/address.png" alt="my adress"> </span> <br>
+                    <p class="address__content">&nbsp;&nbsp;&nbsp;&nbsp; my address is <br>algerian street <br> Addiss Ababa <br > Ethiopia</p>   
+                 </div></br>
+                <a class="aside__link" href="mailto:gizawag123@gmail.com"> email me at <img src="../images/email.jpg" alt="email icon" class="aside__image"> </a><br>
+                <a class="aside__link" href="https://www.facebook.com/gech.yeag/"> on facebook <img src="../images/facebook.png" alt="facebook icon" class="aside__image"></a></br>
+                <a class="aside__link" href="tel:2519 70 45 40 65"> call me at &nbsp;  &nbsp; <img src="../images/call.png" alt="call icon" class="aside__image"></a></li>  
+            </aside>
+        </div>
+    </main>
+
+    <footer class="page--footer" >
+        <div class="page--footer__block">
+            <address>
+                    <h2>my address </h2> 
+                    <p>algerian street <br> Addiss Ababa <br > Ethiopia</p> 
+            </address> 
+        </div>
+
+        <div class="page--footer__block">
+            <h2>contact me at</h2>
+            <div class="page--footer__contact">
+                <a href="mailto:gizawag123@gmail.com"><img class="page--footer__image" src="../images/email.jpg" alt="my email"></a>
+                <a href="https://www.facebook.com/gech.yeag/"><img class="page--footer__image" src="../images/facebook.png" alt="my facebook"></a>
+                <a href="tel:2519 70 45 40 65"><img class="page--footer__image" src="../images/call.png" alt="call me at"></a>
+            </div>
+        </div>
+
+        <div class="page--footer__block">
+            <h2>navigate to</h2>
+            <ul>
+                <li> <a class="block--link" href="certificate.html"> previous page</a></li>
+                <li> <a class="block--link" href="skill.html"> my skills </a> </li> 
+                <li> <a class="block--link" href="portifolio.html"> my portifolio</a></li> 
+            </ul>
+        </div>
+    </footer>  
+    <script src="../JS/form.js"></script> 
+
+    
+</body>
+</html>
